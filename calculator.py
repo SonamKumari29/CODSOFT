@@ -18,15 +18,12 @@ def button_click(char):
 def clear_display():
     entry.delete(0, tk.END)
 
-# Create the main application window
 root = tk.Tk()
 root.title("Calculator")
 
-# Create an entry widget to display the input and result
 entry = tk.Entry(root, width=30)
 entry.grid(row=0, column=0, columnspan=4)
 
-# Create buttons for digits and operations
 buttons = [
     '7', '8', '9', '/',
     '4', '5', '6', '*',
@@ -47,7 +44,6 @@ for button in buttons:
         col_val = 0
         row_val += 1
 
-# Create a clear button
 tk.Button(root, text="Clear", padx=20, pady=20, command=clear_display).grid(row=row_val, column=col_val)
 
 root.mainloop()
