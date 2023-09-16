@@ -1,4 +1,5 @@
 import tkinter as tk
+import requests
 
 API_KEY = "481991d124506eeb6d0082fa0a88ebbd"
 
