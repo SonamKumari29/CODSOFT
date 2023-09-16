@@ -12,7 +12,6 @@ Answers = [3, 2, 3]
 Score = 0
 Total_No_Questions = 3
 Question_no = 1
-
 def start_again():
     global Score,Question_no
     
@@ -29,7 +28,6 @@ def start_again():
     play_again.place_forget()
     score.place_forget()
     root.pack()
-
 def next():
     global Score, Question_no
     if val1.get() == 1:
