@@ -31,8 +31,10 @@ def password():
     if (c1.get()):
         final_list.append(list_4)
     bound = c1.get() + c2.get() + c3.get() + c4.get()
+          
     if not (bound):
         return ("Nothing selected")
+              
     password = []
     for i in range(ln):
         if (i == 0):
